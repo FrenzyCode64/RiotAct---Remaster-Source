@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "ra_plaster/plasterwall001b"
+	"$surfaceprop" "plaster"
+	"%keywords" "riotact"
+	"$bumpmap" "ra_plaster/plasterwall001b_normal"
+}

@@ -1,0 +1,77 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "Speech"
+  {
+    event speak "PoorKarim"
+    {
+      time 1.106667 2.177529
+      param "vo/PoorKarim.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Expression"
+  {
+    event expression "sad"
+    {
+      time 0.340000 2.646667
+      param "ra_expressions"
+      param2 "sad"
+      event_ramp 
+      {
+        0.2840 0.9328
+        1.7700 0.9580
+      }
+    }
+  }
+  channel "FaceAtKarim"
+  {
+    event face "FaceAtKarim"
+    {
+      time 0.173333 2.660000
+      param "!target2"
+      event_ramp 
+      {
+        0.3520 0.5714
+        1.3560 0.9076
+      }
+    }
+  }
+  channel "LookAtKarim"
+  {
+    event lookat "LookAtKarim"
+    {
+      time 0.560000 2.333334
+      param "!target2"
+      event_ramp 
+      {
+        0.4800 0.8992
+        1.2220 0.7941
+      }
+    }
+  }
+  channel "MoveToPoint"
+  {
+    event moveto "MoveNearKarim"
+    {
+      time 0.726667 2.660000
+      param "karim"
+      param2 "Walk"
+      distancetotarget 64.00
+    }
+  }
+}
+
+mapname "maps\ra_c1l3.bsp"
+scalesettings
+{
+  "CChoreoView" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off

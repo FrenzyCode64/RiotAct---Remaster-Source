@@ -1,0 +1,79 @@
+// Choreo version 1
+actor "!Target1"
+{
+  channel "Speech"
+  {
+    event speak "moveon"
+    {
+      time 0.386666 3.584149
+      param "canals.gunboat_moveon"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "LookAtPlayer"
+  {
+    event lookat "lookatplayer"
+    {
+      time -0.633333 -0.133333
+      param "!player"
+    }
+    event lookat "LookAtPlayer"
+    {
+      time 0.193334 3.693334
+      param "!player"
+      event_ramp
+      {
+        0.3520 0.8445
+        2.2260 0.7983
+      }
+    }
+  }
+  channel "FaceToPlayer"
+  {
+    event face "FaceToPlayer"
+    {
+      time 0.000000 4.500000
+      param "!player"
+    }
+  }
+  channel "Idle"
+  {
+    event sequence "Idle"
+    {
+      time -0.006666 4.726667
+      param "scaredidle"
+      event_ramp
+      {
+        1.1680 0.7521
+        3.2800 0.9538
+      }
+    }
+  }
+  channel "Action"
+  {
+    event sequence "wave"
+    {
+      time 0.493333 4.493333
+      param "Wave"
+      event_ramp
+      {
+        0.5080 0.9916
+      }
+      fixedlength
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

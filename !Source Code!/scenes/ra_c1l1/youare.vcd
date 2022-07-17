@@ -1,0 +1,149 @@
+// Choreo version 1
+actor "!Target1"
+{
+  channel "Speech"
+  {
+    event speak "YouAreJamil"
+    {
+      time 0.373333 2.328616
+      param "vo/YouAreJamil.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "IThink"
+    {
+      time 3.626666 17.370090
+      param "vo/IThink.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event expression "surprised_scared"
+    {
+      time 0.333333 2.586667
+      param "ra_expressions"
+      param2 "surprised_scared"
+      event_ramp 
+      {
+        0.4680 0.8151
+      }
+    }
+    event expression "some_hope"
+    {
+      time 2.686667 5.666667
+      param "ra_expressions"
+      param2 "some_hope"
+      event_ramp 
+      {
+        0.8140 0.5840
+        2.3980 0.6849
+      }
+    }
+    event expression "dreamer"
+    {
+      time 5.500000 11.586666
+      param "ra_expressions"
+      param2 "dreamer"
+      event_ramp 
+      {
+        0.7960 0.3067
+        2.1200 0.4034
+        3.6093 0.8361
+      }
+    }
+    event expression "tight_eyes"
+    {
+      time 11.573334 14.520000
+      param "ra_expressions"
+      param2 "tight_eyes"
+      event_ramp 
+      {
+        0.5100 0.7563
+        1.6620 0.8445
+        1.9140 0.1050
+      }
+    }
+    event expression "surprised_scared"
+    {
+      time 14.580000 17.233334
+      param "ra_expressions"
+      param2 "surprised_scared"
+      event_ramp 
+      {
+        0.3520 0.8571
+        2.0460 0.6933
+      }
+    }
+  }
+  channel "Action"
+  {
+    event gesture "RightHand"
+    {
+      time 15.400000 17.366667
+      param "G_righthandmotion"
+      absolutetags playback_time
+      {
+        "apex" 0.241379
+        "accent" 0.517241
+        "loop" 0.689655
+        "end" 0.775862
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.241379
+        "accent" 0.517241
+        "loop" 0.689655
+        "end" 0.775862
+      }
+      sequenceduration 1.966667
+    }
+  }
+  channel "FaceToPlayer"
+  {
+    event face "FaceToPlayer"
+    {
+      time 0.073333 17.280001
+      param "!player"
+      event_ramp 
+      {
+        0.3360 0.8824
+        16.7200 0.8992
+      }
+    }
+    event face "FaceToMonitor"
+    {
+      time 16.020000 16.953335
+      param "!target2"
+      event_ramp 
+      {
+        0.4460 0.9118
+      }
+      lockbodyfacing
+    }
+  }
+  channel "LookAtPlayer"
+  {
+    event lookat "LookAtPlayer"
+    {
+      time 0.046667 17.326666
+      param "!player"
+      event_ramp 
+      {
+        0.2460 0.6849
+        17.0140 0.8235
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off

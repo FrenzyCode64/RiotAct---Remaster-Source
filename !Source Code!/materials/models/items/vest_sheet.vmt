@@ -1,0 +1,6 @@
+"vertexlitGeneric"
+{
+	"$basetexture" "models/items/vest_sheet"
+	"$models" 1
+	"$surfaceprop" "metal"
+}

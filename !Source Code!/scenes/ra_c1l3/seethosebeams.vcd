@@ -1,0 +1,89 @@
+// Choreo version 1
+actor "!Target1"
+{
+  channel "Speech"
+  {
+    event speak "seethosebeams"
+    {
+      time 0.006667 3.655148
+      param "vo/SeeThoseBeams.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event expression "focused"
+    {
+      time 1.020000 3.566667
+      param "ra_expressions"
+      param2 "focused"
+      event_ramp 
+      {
+        0.3820 0.8529
+        0.9440 0.4160
+        1.6500 0.9202
+      }
+    }
+  }
+  channel "Facial"
+  {
+    event expression "deepsight"
+    {
+      time 0.060000 1.646667
+      param "ra_expressions"
+      param2 "deepsight"
+      event_ramp 
+      {
+        0.3160 0.8025
+      }
+    }
+    event expression "tight_eyes"
+    {
+      time 2.240000 3.240000
+      param "ra_expressions"
+      param2 "tight_eyes"
+      event_ramp 
+      {
+        0.2080 0.2437
+        0.5640 0.1807
+      }
+    }
+  }
+  channel "FaceToPlayer"
+  {
+    event face "FacePlayer"
+    {
+      time 0.006667 3.646667
+      param "!player"
+    }
+  }
+  channel "LookAtPlayer"
+  {
+    event lookat "LookPlayer"
+    {
+      time 0.000000 3.660001
+      param "!player"
+    }
+  }
+  channel "MoveToPoint"
+  {
+    event moveto "MoveNearKarim"
+    {
+      time 0.006667 3.660000
+      param "karim"
+      param2 "Walk"
+      distancetotarget 64.00
+    }
+  }
+}
+
+mapname "maps\ra_c1l3.bsp"
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

@@ -1,0 +1,8 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/police/metrocop_sheetmask"
+	"$surfaceprop" "Flesh"
+	"$envmapcontrast" 1
+	"$selfillum" 1
+	"$model" 1
+}

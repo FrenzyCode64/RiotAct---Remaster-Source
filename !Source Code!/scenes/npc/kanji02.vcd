@@ -1,0 +1,50 @@
+// Choreo version 1
+actor "!Target1"
+{
+  channel "Speech"
+  {
+    event speak "kanji02"
+    {
+      time 0.333333 1.356938
+      param "vo/Kanji02.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event expression "deepsight"
+    {
+      time 0.466667 1.466667
+      param "ra_expressions"
+      param2 "deepsight"
+      event_ramp 
+      {
+        0.2640 0.7731
+      }
+    }
+  }
+  channel "Facial"
+  {
+    event expression "focused"
+    {
+      time 0.113333 2.246667
+      param "ra_expressions"
+      param2 "focused"
+      event_ramp 
+      {
+        0.3420 0.9874
+        1.7260 1.0000
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off

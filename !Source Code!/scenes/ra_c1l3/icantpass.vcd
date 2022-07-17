@@ -1,0 +1,87 @@
+// Choreo version 1
+actor "!Target1"
+{
+  channel "Speech"
+  {
+    event speak "icantpass"
+    {
+      time 0.020000 3.977143
+      param "vo/ICantPass.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event expression "surprised_scared"
+    {
+      time 0.053333 1.160000
+      param "ra_expressions"
+      param2 "surprised_scared"
+      event_ramp 
+      {
+        0.2560 0.6345
+        0.7280 0.7101
+      }
+    }
+    event expression "some_hope"
+    {
+      time 0.986667 2.626667
+      param "ra_expressions"
+      param2 "some_hope"
+      event_ramp 
+      {
+        0.3700 0.9454
+        1.2600 0.6849
+      }
+    }
+    event expression "sad"
+    {
+      time 2.040000 3.986667
+      param "ra_expressions"
+      param2 "sad"
+      event_ramp 
+      {
+        0.3620 0.7563
+        0.5880 0.3992
+        1.4680 0.7815
+      }
+    }
+  }
+  channel "FaceToPlayer"
+  {
+    event face "FacePlayer"
+    {
+      time 0.006666 4.000000
+      param "!player"
+    }
+  }
+  channel "LooAtPlayer"
+  {
+    event lookat "LookPlayer"
+    {
+      time 0.020000 4.000000
+      param "!player"
+    }
+  }
+  channel "MoveToPoint"
+  {
+    event moveto "MoveNearKarim"
+    {
+      time 0.000000 3.986667
+      param "karim"
+      param2 "Walk"
+      distancetotarget 64.00
+    }
+  }
+}
+
+mapname "maps\ra_c1l3.bsp"
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

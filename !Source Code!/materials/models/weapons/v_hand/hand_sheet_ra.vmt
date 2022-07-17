@@ -1,0 +1,13 @@
+"vertexlitGeneric"
+{
+	"$basetexture" "models/Weapons/V_hand/hand_sheet_ra"
+	"$bumpmap" "models/Weapons/V_hand/hand_sheet_normal_ra"
+	"$halflambert" 1
+	"$nodecal" "1"
+	"$model" "1"
+	"$phong" "1"
+//	"$ambientocclusiontexture" "models/Weapons/V_hand/hand_sheet_occlusion_ra"
+	"$phongexponenttexture" "models/Weapons/V_hand/hand_sheet_exponent_ra"
+	"$phongboost"	"6"
+	"$phongfresnelranges"	"[0.05 0.5 1]"
+}

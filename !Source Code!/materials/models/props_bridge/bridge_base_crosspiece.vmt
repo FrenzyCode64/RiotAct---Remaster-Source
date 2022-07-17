@@ -1,0 +1,9 @@
+"vertexlitGeneric"
+{
+	"$basetexture" "models/props_bridge/bridge_base_crosspiece"
+	"$models" 1
+	"$alphatest" 1
+	"$nocull" 1
+	"$surfaceprop" "Metal"
+	"%keywords" "riotact"
+}

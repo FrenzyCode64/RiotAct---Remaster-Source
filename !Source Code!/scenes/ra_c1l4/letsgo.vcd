@@ -1,0 +1,136 @@
+// Choreo version 1
+actor "!Target1"
+{
+  channel "Gesture"
+  {
+    event gesture "turn"
+    {
+      time 0.006667 1.806667
+      param "b_OverHere_Right"
+      absolutetags playback_time
+      {
+        "apex" 0.188679
+        "extreme" 0.792453
+        "loop" 0.811321
+        "end" 0.830189
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.188679
+        "extreme" 0.792453
+        "loop" 0.811321
+        "end" 0.830189
+      }
+      sequenceduration 1.800000
+    }
+    event gesture "back"
+    {
+      time 1.606667 4.240001
+      param "g_Breencast_Watcher_Response"
+      absolutetags playback_time
+      {
+        "apex" 0.128205
+        "accent" 0.256410
+        "loop" 0.448718
+        "end" 0.641026
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.128205
+        "accent" 0.256410
+        "loop" 0.448718
+        "end" 0.641026
+      }
+      sequenceduration 2.633333
+    }
+    event expression "joy"
+    {
+      time 0.233333 2.973333
+      param "ra_expressions"
+      param2 "joy"
+      event_ramp
+      {
+        0.4100 0.6092
+        1.2400 0.2059
+        2.2640 0.7227
+      }
+    }
+  }
+  channel "Speach"
+  {
+    event speak "letsgo"
+    {
+      time 1.940001 2.598867
+      param "npc_citizen.letsgo01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "finally"
+    {
+      time 0.200000 1.037687
+      param "npc_citizen.finally"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "FaceAt"
+  {
+    event face "FaceAtTarget"
+    {
+      time 1.733333 3.580000
+      param "citizen_end_look"
+      event_ramp
+      {
+        0.7780 0.7563
+        1.4240 0.6134
+      }
+    }
+    event lookat "LookAtPlayer"
+    {
+      time 0.226667 1.613334
+      param "!player"
+      event_ramp
+      {
+        0.4940 0.7731
+        1.2480 0.7017
+      }
+    }
+  }
+  channel "LookAt"
+  {
+    event lookat "LookAtTarget"
+    {
+      time 2.266667 3.120000
+      param "citizen_end_look"
+      event_ramp
+      {
+        0.3200 0.4916
+      }
+    }
+    event face "FaceAtPlayer"
+    {
+      time 0.066667 1.920000
+      param "!player"
+      event_ramp
+      {
+        0.3220 0.7983
+        1.5100 0.7395
+      }
+    }
+  }
+}
+
+mapname "maps\ra_c1l4.bsp"
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

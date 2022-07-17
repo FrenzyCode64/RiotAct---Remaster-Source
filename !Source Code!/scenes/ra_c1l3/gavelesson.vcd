@@ -1,0 +1,64 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "Speech"
+  {
+    event expression "joy"
+    {
+      time 0.326667 3.713334
+      param "ra_expressions"
+      param2 "joy"
+      event_ramp 
+      {
+        0.3820 0.9412
+        1.8120 0.5084
+        2.2980 0.9538
+      }
+    }
+    event speak "Lesson"
+    {
+      time 0.486667 3.609229
+      param "vo/Lesson.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "FaceToPlayer"
+  {
+    event face "FacePlayer"
+    {
+      time 0.026667 3.706667
+      param "!player"
+      event_ramp 
+      {
+        0.4680 0.9622
+        3.3440 1.0000
+      }
+    }
+  }
+  channel "LookAtPlayer"
+  {
+    event lookat "LookPlayer"
+    {
+      time 0.013333 3.720000
+      param "!player"
+      event_ramp 
+      {
+        0.3480 0.9160
+        3.2780 0.9286
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

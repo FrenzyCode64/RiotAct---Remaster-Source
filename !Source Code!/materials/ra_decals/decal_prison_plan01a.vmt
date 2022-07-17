@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$translucent" 1
+	"$basetexture" "ra_decals/decal_prison_plan01a"
+	"$decal" 1
+	"$decalscale" 0.25
+	"%keywords" "riotact"
+}
+

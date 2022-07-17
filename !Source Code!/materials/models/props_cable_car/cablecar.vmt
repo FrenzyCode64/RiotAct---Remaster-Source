@@ -1,0 +1,7 @@
+"vertexlitGeneric"
+{
+	"$basetexture" "models/props_cable_car/cablecar"
+	"$models" 1
+	"$surfaceprop" "Metal"
+	"%keywords" "riotact"
+}

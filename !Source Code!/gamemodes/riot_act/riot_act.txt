@@ -1,0 +1,7 @@
+"riot_act"
+{
+	"base"		"base"
+	"title"		"Half-life 2: Riot Act"
+	"maps"		"^ra_c1l"
+	"menusystem"	"1"
+}

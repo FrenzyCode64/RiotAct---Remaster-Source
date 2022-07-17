@@ -1,0 +1,38 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "Speech"
+  {
+    event speak "runjamilnow"
+    {
+      time 0.180000 2.186508
+      param "riot_act.run_jamil_now"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event expression "surprised_scared"
+    {
+      time 0.146667 2.386667
+      param "ra_expressions"
+      param2 "surprised_scared"
+      event_ramp 
+      {
+        0.3660 0.9832
+        1.2340 0.4706
+        1.5700 0.6176
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off

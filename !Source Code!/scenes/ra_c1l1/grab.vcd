@@ -1,0 +1,106 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "Speech"
+  {
+    event speak "messedup"
+    {
+      time 0.113334 1.958912
+      param "vo\MessedUp.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grabweapon"
+    {
+      time 2.406667 5.397574
+      param "vo\Grab.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event expression "focused"
+    {
+      time 0.193333 2.346667
+      param "ra_expressions"
+      param2 "focused"
+      event_ramp
+      {
+        0.3620 0.5966
+        1.6760 0.9370
+      }
+    }
+    event expression "surprised_scared"
+    {
+      time 1.373333 3.913334
+      param "ra_expressions"
+      param2 "surprised_scared"
+      event_ramp
+      {
+        0.3900 0.4874
+        2.2787 0.3235
+      }
+    }
+    event expression "focused"
+    {
+      time 2.246667 5.180001
+      param "ra_expressions"
+      param2 "focused"
+      event_ramp
+      {
+        0.3220 0.5588
+        1.4640 0.9244
+        2.2400 0.4664
+      }
+    }
+    event expression "surprised_scared"
+    {
+      time 3.713334 5.333334
+      param "ra_expressions"
+      param2 "surprised_scared"
+      event_ramp
+      {
+        0.3880 0.7731
+        1.3800 0.9202
+      }
+    }
+  }
+  channel "FaceToPlayer"
+  {
+    event face "FaceToPlayer"
+    {
+      time 0.033334 5.360001
+      param "!player"
+      event_ramp
+      {
+        0.1660 0.7815
+        5.0600 0.8571
+      }
+    }
+  }
+  channel "LookAtPlayer"
+  {
+    event lookat "LookAtPlayer"
+    {
+      time 0.040000 5.393333
+      param "!player"
+      event_ramp
+      {
+        0.4820 0.8193
+        4.9400 0.8908
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

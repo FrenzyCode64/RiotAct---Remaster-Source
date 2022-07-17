@@ -1,0 +1,18 @@
+"UnlitTwoTexture"
+{
+	"$basetexture" "ra_overlays/shorewave001a"
+	"$texture2"    "ra_overlays/shorewave001b"
+	"$translucent" 1
+	"$alpha" 0.6
+	"$decal" 1
+
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar" "$texture2transform"
+			"texturescrollrate" .1
+			"texturescrollangle" 90
+		}
+	}
+}

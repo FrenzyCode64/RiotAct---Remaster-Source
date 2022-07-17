@@ -1,0 +1,5 @@
+"vertexlitGeneric"
+{
+	"$basetexture" "models/Weapons/V_hand/v_arm_sheet"
+	"$surfaceprop" "metal"
+}

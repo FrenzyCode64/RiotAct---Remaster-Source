@@ -1,0 +1,40 @@
+"Unlittwotexture"
+{
+	"$basetexture" 	"ra_effects/combinedisplay01b"
+	"%tooltexture" 	"ra_effects/combinedisplay01b"
+	"$surfaceprop" 	"glass"
+	"$texture2"	"models/props_combine/combinescanline"
+	"$mod2x" 	"1"
+	"%keywords" 	"riotact"
+	"Proxies"
+	{
+		"Sine"
+		{
+			"resultVar" "$color[0]"
+			"sineperiod" .1
+			"sinemin" .98
+			"sinemax" 1
+		}
+		"Sine"
+		{
+			"resultVar" "$color[1]"
+			"sineperiod" .1
+			"sinemin" .98
+			"sinemax" 1
+		}
+		"Sine"
+		{
+			"resultVar" "$color[2]"
+			"sineperiod" .1
+			"sinemin" .99
+			"sinemax" 1
+		}
+
+		"TextureScroll"
+		{
+			"texturescrollvar" "$texture2transform"
+			"texturescrollrate" 1
+			"texturescrollangle" -90
+		}
+	}
+}
